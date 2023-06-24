@@ -2,7 +2,9 @@
 import { Icon } from "@iconify/react";
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
+import Logo from "./images/react-joke-app.png";
+import Logo2 from "./images/github-user-search.png";
+import Logo3 from "./images/movie-search.png";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -24,8 +26,7 @@ export const Blog = <Icon icon="ph:link-bold" />;
  **************************************************************
   Add a second paragraph for the about me section.
 */
-export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+export const moreInfo = "A web developer who recently graduated from a bootcamp with Digital Crafts, specializing in JavaScript, React, React-Redux, PostgreSQL, Sequelize, and Node.js. With a strong foundation in JavaScript, I excel at building dynamic web applications. I'm proficient in React and React-Redux, enabling me to create scalable front-end solutions. I also have experience with PostgreSQL and Sequelize for efficient database management. As a full-stack developer, I'm skilled in Node.js, allowing me to develop server-side applications and APIs. I'm passionate about continuously expanding my skill set and keeping up with the latest technologies. I thrive on challenges and enjoy finding innovative solutions. I'm eager to apply my newly acquired skills and collaborate with forward-thinking teams to create impactful web applications. With strong problem-solving abilities and attention to detail, I can work both independently and as part of a team.";
 
 /* Skills
  ************************************************************** 
@@ -60,7 +61,7 @@ export const skillData = [
   {
     id: 6,
     skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
+    name: "PostgreSQL",
   },
   {
     id: 7,
@@ -80,19 +81,27 @@ export const skillData = [
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
+export const resume = 'https://docs.google.com/document/d/1TIZJnJuMaNQALroJE4THzBkc7vSGY-3MgnVDdSqS2ME/edit?usp=sharing';
 
 /* Projects
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["react-weather-app", "memory-game", "github-user-search"];
+export const filteredProjects = ["react-joke-app", "github-user-search", "movie-search"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 4-5)
 export const projectCardImages = [
   {
-    name: "example-1",
+    name: "react-joke-app",
     image: Logo,
+  },
+  {
+    name: "github-user-search",
+    image: Logo2,
+  },
+  {
+    name: "movie-search",
+    image: Logo3,
   },
 ];
 

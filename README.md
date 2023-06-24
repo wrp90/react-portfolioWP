@@ -37,7 +37,7 @@ Add your GitHub username once and all of your info will automatically be updated
    ************************************************************** 
      Add your GitHub username (string - "YourUsername") below.
    */
-   export const githubUsername = "Your GitHub username here";
+   export const githubUsername = "wrp90";
    ```
 
 7. Start the development server to view the results
@@ -57,14 +57,14 @@ Add your GitHub username once and all of your info will automatically be updated
    ************************************************************** 
      List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
    */
-   export const filteredProjects = ["example-1", "example-2", "example-3"];
+   export const filteredProjects = ["react-joke-app", "github-user-search", "movie-search"];
    ```
 
 2. Import the projects images you want to use ([data.js](https://github.com/mshuber1981/github-react-portfolio-template/blob/main/src/data.js#L4) lines 4-5) or the default image will be applied
 
    ```javascript
    // Projects Images (add your images to the images directory and import below)
-   import Logo from "./images/logo.svg";
+   import Logo from "./images/react-joke-app.png";
    ```
 
 3. Follow the instructions to update the projectData array ([data.js](https://github.com/mshuber1981/github-react-portfolio-template/blob/main/src/data.js#L91) lines 91-97)
@@ -73,7 +73,7 @@ Add your GitHub username once and all of your info will automatically be updated
    // Replace the defualt GitHub image for matching repos below (images imported above - lines 13-14)
    export const projectCardImages = [
      {
-       name: "example-1",
+       name: "react-joke-app",
        image: Logo,
      },
    ];
