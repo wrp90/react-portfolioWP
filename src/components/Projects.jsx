@@ -42,6 +42,16 @@ export default function Projects() {
     [data]
   );
 
+  const getHomepage = (url) => {
+    if (url === "https://github.com/wrp90/movie-search") {
+      return "https://wrp90.github.io/movie-search/"
+    } else if (url === "https://github.com/wrp90/github-user-search") {
+      return "https://wrp90.github.io/github-user-search/"
+    } else if (url === "https://github.com/wrp90/memory-game") {
+      return "https://wrp90.github.io/memory-game/"
+    }
+  }
+
   return (
     <Element name={"Projects"} id="projects">
       <section className="section">
@@ -81,7 +91,7 @@ export default function Projects() {
                         name={name}
                         description={description}
                         url={html_url}
-                        demo={homepage}
+                        demo={getHomepage(html_url)}
                       />
                     </Col>
                   );
