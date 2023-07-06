@@ -1,25 +1,19 @@
 import React from "react";
-import { useAppContext } from "../appContext";
 import { useSelector } from "react-redux";
 import {
   selectData,
   selectError,
   selectIsLoading,
 } from "../pages/allProjectsSlice";
-import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 // Data
 import { filteredProjects } from "../data";
-// Icons
-import { Icon } from "@iconify/react";
-// Components
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
 import StyledCard from "./StyledCard";
 
 export default function Projects() {
   const [mainProjects, setMainProjects] = React.useState([]);
-  const { theme } = useAppContext();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
   const data = useSelector(selectData);
@@ -49,6 +43,8 @@ export default function Projects() {
       return "https://wrp90.github.io/github-user-search/"
     } else if (url === "https://github.com/wrp90/memory-game") {
       return "https://wrp90.github.io/memory-game/"
+    } else if (url === "https://github.com/wrp90/react-joke-app") {
+      return "https://react-joke-app.onrender.com"
     }
   }
 
@@ -99,7 +95,7 @@ export default function Projects() {
               </Row>
               {data.length > 3 && (
                 <Container className="text-center mt-5">
-                  <Link to="/All-Projects">
+                  {/* <Link to="/All-Projects">
                     <Button
                       size="lg"
                       variant={
@@ -108,7 +104,7 @@ export default function Projects() {
                     >
                       All <Icon icon="icomoon-free:github" /> Projects
                     </Button>
-                  </Link>
+                  </Link> */}
                 </Container>
               )}
             </>

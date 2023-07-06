@@ -82,13 +82,13 @@ export const skillData = [
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = 'https://docs.google.com/document/d/1TIZJnJuMaNQALroJE4THzBkc7vSGY-3MgnVDdSqS2ME/edit?usp=sharing';
+export const resume = 'https://docs.google.com/document/d/1a5YDw6o6U7AeGehQbP1xexDC2mnk4MR5EJW47Aj45xg/edit?usp=sharing';
 
 /* Projects
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["memory-game", "github-user-search", "movie-search"];
+export const filteredProjects = ["memory-game", "github-user-search", "react-joke-app"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 4-5)
 export const projectCardImages = [
