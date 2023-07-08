@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import styled from "styled-components";
 // Media
-// import Logo from "../images/logo.svg";
+import Logo from "../images/logo.svg";
 // Components
 import { Container } from "react-bootstrap";
 import { Spin } from "../components/globalStyledComponents";
@@ -49,7 +49,7 @@ export default function NotFound() {
       <StyledNotFound>
         <Container className="d-flex justify-content-center">
           <span>4</span>
-          {/* <img src={Logo} alt="React Logo" className="logo-img" /> */}
+          <img src={Logo} alt="React Logo" className="logo-img" />
           <span>4</span>
         </Container>
         <p className="text-center">Sorry, page not found...</p>
