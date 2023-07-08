@@ -9,7 +9,6 @@ import { Icon } from "@iconify/react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 // import { FixedNavSpacer, ToggleSwitch } from "./globalStyledComponents";
 // Images
-import Logo from "../images/logo.svg";
 
 const navLinks = {
   routes: [
@@ -98,15 +97,6 @@ export default function NavBar() {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand>
-            <img
-              alt="React Logo"
-              src={Logo}
-              width="35"
-              height="35"
-              className="rounded-circle"
-            />
-          </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
             onClick={toggleExpanded}
