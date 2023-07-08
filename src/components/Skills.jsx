@@ -1,8 +1,6 @@
 import { useAppContext } from "../appContext";
 import { Element } from "react-scroll";
-// Data
 import { skillData, resume } from "../data";
-// Components
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 
@@ -30,18 +28,21 @@ export default function Skills() {
             })}
           </Row>
           {resume && (
-            <a href={resume}>
+            <div>
               <Button
+                href={require("../assets/resume.pdf")}
                 size="lg"
                 variant={theme === "light" ? "outline-dark" : "outline-light"}
                 className="mt-5"
+                download="resume.pdf"
               >
-                R&eacute;sum&eacute;
+                Résumé
               </Button>
-            </a>
+            </div>
           )}
         </Container>
       </section>
     </Element>
   );
 }
+
