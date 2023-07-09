@@ -45,6 +45,8 @@ export default function Projects() {
       return "https://wrp90.github.io/memory-game/"
     } else if (url === "https://github.com/wrp90/react-joke-app") {
       return "https://react-joke-app.onrender.com"
+    } else if (url === "https://github.com/wrp90/react-weather-app") {
+      return "https://react-weather-app-5qni.onrender.com/"
     }
   }
 
