@@ -11,7 +11,7 @@ import Logo5 from "./images/react-weather-app.png";
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
 import HeroDark from "./images/hero-dark.jpg";
-// If you change the import names above then you need to change the export names below
+// If you change the import names above, then you need to change the export names below
 export { HeroLight as Light };
 export { HeroDark as Dark };
 
@@ -28,7 +28,11 @@ export const Blog = <Icon icon="ph:link-bold" />;
  **************************************************************
   Add a second paragraph for the about me section.
 */
-export const moreInfo = "A web developer who recently graduated from a bootcamp with Digital Crafts, specializing in PERN stack with CRUD development.  With a strong foundation in JavaScript, I excel at building dynamic web applications. I'm proficient in React and React-Redux, enabling me to create scalable front-end solutions. I also have experience with PostgreSQL and Sequelize for efficient database management. As a full-stack developer, I'm skilled in Node.js, allowing me to develop server-side applications and APIs. I'm passionate about continuously expanding my skill set and keeping up with the latest technologies. I thrive on challenges and enjoy finding innovative solutions. I'm eager to apply my newly acquired skills and collaborate with forward-thinking teams to create impactful web applications. With strong problem-solving abilities and attention to detail, I can work both independently and as part of a team.";
+export const moreInfoParagraph1 =
+  "A web developer who recently graduated from a bootcamp with Digital Crafts, specializing in PERN stack with CRUD development. With a strong foundation in JavaScript, I excel at building dynamic web applications. I'm proficient in React and React-Redux, enabling me to create scalable front-end solutions. I also have experience with PostgreSQL and Sequelize for efficient database management. As a full-stack developer, I'm skilled in Node.js, allowing me to develop server-side applications and APIs.";
+
+export const moreInfoParagraph2 =
+  "I'm passionate about continuously expanding my skill set and keeping up with the latest technologies. I thrive on challenges and enjoy finding innovative solutions. I'm eager to apply my newly acquired skills and collaborate with forward-thinking teams to create impactful web applications. With strong problem-solving abilities and attention to detail, I can work both independently and as part of a team.";
 
 /* Skills
  ************************************************************** 
@@ -83,15 +87,20 @@ export const skillData = [
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = 'https://docs.google.com/document/d/1Fek5oMUHUTrIczkkIFJ-B6F16-XGtcYLvg7c9cB9bdI/edit?usp=sharing';
+export const resume =
+  "https://docs.google.com/document/d/1Fek5oMUHUTrIczkkIFJ-B6F16-XGtcYLvg7c9cB9bdI/edit?usp=sharing";
 
 /* Projects
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["react-weather-app", "github-user-search", "react-joke-app"];
+export const filteredProjects = [
+  "react-weather-app",
+  "github-user-search",
+  "react-joke-app",
+];
 
-// Replace the defualt GitHub image for matching repos below (images imported above - lines 4-5)
+// Replace the default GitHub image for matching repos below (images imported above - lines 4-5)
 export const projectCardImages = [
   {
     name: "react-joke-app",
